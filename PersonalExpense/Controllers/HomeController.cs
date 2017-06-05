@@ -105,7 +105,7 @@ namespace PersonalExpense.Controllers
 
 
 
-            var dataChart = new System.Web.Helpers.Chart(width: 800, height: 400, theme: ChartTheme.Blue).AddTitle("Amount Per Month").AddSeries(
+            var dataChart = new System.Web.Helpers.Chart(width: 800, height: 400, theme: ChartTheme.Blue).AddTitle("Monthly Total").AddSeries(
                 chartType: "column",
                 xValue: new[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" },
                 yValues: new[] { jan, feb, mar, apr, may, jun, jul, aug, sept, oct, nov, dec },
