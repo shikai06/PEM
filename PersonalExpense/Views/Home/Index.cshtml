@@ -1,0 +1,42 @@
+﻿@model IEnumerable<PersonalExpense.ViewModels.ExpenseGroup>
+
+@{
+    ViewBag.Title = "";
+}
+
+<h2>Student Body Statistics</h2>
+
+<table style="margin-bottom:100px; margin-left:100px">
+    <tr>
+        @*<td class="bs-component alert alert-warning" ><img src="@Url.Action("Chart")" alt="SimpleChart" /></td>*@
+        <td class="bs-component alert alert-info">Income Total:</td>
+        <td class="bs-component alert alert-info">@ViewBag.Total</td>
+        
+    </tr>
+    <tr>
+        @*<td class="bs-component alert alert-warning" ><img src="@Url.Action("Chart")" alt="SimpleChart" /></td>*@
+        <td class="bs-component alert alert-info">Expense Total:</td>
+        <td class="bs-component alert alert-info">@ViewBag.TotalE</td>
+
+    </tr>
+    <tr>
+        @*<td class="bs-component alert alert-warning" ><img src="@Url.Action("Chart")" alt="SimpleChart" /></td>*@
+        <td class="bs-component alert alert-info">Overall Total:</td>
+        <td class="bs-component alert alert-info">@ViewBag.FinalTotal</td>
+
+    </tr>
+   
+</table>
+<table>
+    <tr>
+        <td><img src="@Url.Action("Chart2")" alt="SimpleChart" /></td>
+    </tr>
+    <tr>
+
+        <td><img src="@Url.Action("Chart1")" alt="SimpleChart" /></td>
+
+
+    </tr>
+
+</table>
+
